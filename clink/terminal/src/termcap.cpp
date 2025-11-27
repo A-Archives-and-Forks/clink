@@ -52,7 +52,6 @@ extern "C" int32 show_cursor(int32 visible)
         switch (get_current_ansi_handler())
         {
         case ansi_handler::winterminal:
-        case ansi_handler::wezterm:
             if (!str[0])
             {
                 str = g_enhanced_cursor ? L"\u001b[1 q" : L"\u001b[0 q";
